@@ -40,3 +40,4 @@ Timer finished
 Data fetched from server
 4.You can’t return a click because the click happens asynchronously after the function has already finished executin
 5.JavaScript Promises:A JavaScript Promise is an object representing the eventual outcome of an asynchronous operation. It acts as a placeholder for a value that is not available yet, allowing you to handle asynchronous code (like fetching data from an API) in a more readable and organized way than traditional callbacks. 
+6.Method chaining means calling multiple methods one after another on the same value.

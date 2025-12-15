@@ -1,0 +1,48 @@
+
+<html>
+    <body>
+        <h1>Learning  JS</h1>
+        <p></p>
+        <script>function start(){
+    return new Promise((resolve,reject)=>{
+      console.log("starting process");
+      setTimeout(()=>{
+        let s=true;
+        if(s){
+          console.log("payment started");
+          resolve();
+        }
+        else{
+          console.log("error in starting payment");
+        }
+      },2000);
+    });
+  }
+  function verify(){
+    return new Promise((resolve,reject)=>{
+      console.log("verifying");
+      setTimeout(()=>{
+        let v=true;
+        if(v){
+          console.log("verified");
+          resolve();
+        }
+        else{
+          console.log("not verified try again");
+        }
+  
+      },2000);
+    });
+  }
+  function show(){
+    console.log("successful");
+  
+  }
+  start()
+    .then(() => verify())
+    .then(() => show())
+    .catch(error => console.log(error));
+  
+          </script>
+      </body>
+  </html>
