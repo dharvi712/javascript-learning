@@ -7,4 +7,11 @@
 3.✔ Accessible everywhere
 ❌ Dangerous (can be overwritten)
 4.Bugs become hard to track
-5.
+5.2️⃣ Function Scope (MOST IMPORTANT)
+Variables declared inside a function are local to that function.
+6.Each function creates its own scope
+7.3️⃣ Block Scope (let and const)
+Block = { }
+8.var DOES NOT follow block scope
+9.4️⃣ Lexical Scope (IMPORTANT FOR CLOSURES)
+👉 Inner functions can access outer function variables.
