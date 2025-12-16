@@ -1,0 +1,10 @@
+1.Scope decides where a variable or function can be accessed.
+2.Types of Scope in JavaScript:
+1️⃣ Global Scope
+2️⃣ Function Scope (Local Scope)
+3️⃣ Block Scope (let, const)
+4️⃣ Lexical Scope (foundation of closures)
+3.✔ Accessible everywhere
+❌ Dangerous (can be overwritten)
+4.Bugs become hard to track
+5.
