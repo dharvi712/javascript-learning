@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <h1>Learning JS</h1>
+        <script>
+            // hoisting with var
+            console.log(a);
+            var a=10;
+            //output:underdefined
+            // hoisting with let and const
+            console.log(b);
+let b = 20;
+  /*❌ ReferenceError
+Why?
+👉 Temporal Dead Zone (TDZ)
+👉 b exists but cannot be accessed before declaration*/
+  // function fdeclaration
+  hello();
+
+function hello() {
+    console.log("Hello");
+}
+//function expressiom❌
+hi();
+
+let hi = function () {
+    console.log("Hi");
+};
+// ❌ Error — not hoisted
+//Arrow Function Hoisting ❌
+say();
+
+const say = () => {
+    console.log("Hey");
+};
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+| Type                 | Hoisted | Usable Before |
+| -------------------- | ------- | ------------- |
+| `var`                | Yes     | undefined     |
+| `let`                | Yes     | ❌ TDZ         |
+| `const`              | Yes     | ❌ TDZ         |
+| Function Declaration | Yes     | ✅             |
+| Function Expression  | No      | ❌             |
+| Arrow Function       | No      | ❌             |
+TDZ-temporal dead zone
+2. What is Hoisting?
+👉 JavaScript moves declarations to the top of the scope before execution.
+⚠️ Only declarations, NOT initializations.
