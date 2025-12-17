@@ -1,0 +1,17 @@
+1.🔹 What is a Closure? (Simple Definition)
+👉 A closure is created when a function remembers variables from its outer scope even after the outer function has finished executing.
+2.🔹 What Exactly is Stored in a Closure?
+A closure stores:
+1️⃣ The function itself
+2️⃣ Variables from its lexical environment
+It does NOT copy values — it references them.
+3.🔹 Closures in Real Life (VERY IMPORTANT)
+1️⃣ Data Hiding (PRIVATE VARIABLES)
+🔹 Closures in setTimeout (COMMON INTERVIEW TRAP
+4.setTimeout runs later. When var is used, all callbacks share the same variable due to closure, so the final value is printed. Using let or a separate closure fixes this.
+5.var → one shared variable ❌
+let → separate variable each time ✅
+6.👉 Promises and async/await run code LATER
+Anything that runs later needs to remember data from earlier
+That remembering = closure.
+7.Promises and async/await use closures to remember variables needed after asynchronous operations complete.
