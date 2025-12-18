@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Counter App (Closure)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+        }
+        #count {
+            font-size: 30px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Counter App using Closures</h1>
+    <div id="count">0</div>
+
+    <button id="inc">Increment</button>
+    <button id="dec">Decrement</button>
+
+    <script >
+        function createDelayedMessage(){
+            return function(message){
+                setTimeout(()=>{
+                    document.getElemntById("output").textContent=message;
+
+                },3000);
+            };
+        }
+        // create closure function
+        const showMessageLater=createDelayedMessage();
+        //DOM element
+        const input=document.getElementByID("messageInput");
+        const button=document.getElementById("showBTn");
+        button.addEventListener("click", ()=>{
+            const userMessage=input.value;
+            showMessage(userMessage);
+            input.value="";
+        });
+    </script>
+</body>
+</html>
