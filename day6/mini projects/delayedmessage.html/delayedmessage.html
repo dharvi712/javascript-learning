@@ -28,12 +28,14 @@
     </head>
 <body>
 
-    <h1>Counter App using Closures</h1>
-    <div id="count">0</div>
+    <h1>Delayed Message App</h1>
 
-    <button id="inc">Increment</button>
-    <button id="dec">Decrement</button>
+    <input type="text" id="messageInput" placeholder="Enter your message">
+    <button id="showBtn">Show After 3 Seconds</button>
 
+    <div id="output"></div>
+
+    
     <script >
         function createDelayedMessage(){
             return function(message){
