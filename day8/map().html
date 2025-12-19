@@ -1,0 +1,37 @@
+<html>
+    <body>
+        <script>
+            // eg1
+            let nums=[1,2,3,4];
+            let squares=nums.map(n=>n*n);
+            console.log(squares);
+            // eg2
+            let num=[2,3,4]
+            let t=num.map(n=>n+10);
+            console.log(t);
+            // eg3 modify 
+            let p=[{name:"laptop",price:500},{name:"phone",price:30}];
+            let up=p.map(pr=>{return {
+                name:pr.name,price:pr.price*1.1
+            };});
+            console.log(up);
+            // eg 4 formatting
+            /*let data=[{fname:"dharvi",lname:"manocha"}];
+            let formatted=data.map(d=>({
+                fullname:d.fname+" "+d.lname
+            }));
+            console.log(formatted);*/
+            let data = [{ fname: "dharvi", lname: "manocha" }];
+
+let formatted = data.map(d => {
+  return {
+    fullname: d.fname + " " + d.lname
+  };
+});
+
+console.log(formatted);
+
+
+        </script>
+    </body>
+</html>

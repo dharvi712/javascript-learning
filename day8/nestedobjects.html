@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <script>
+            
+            let car = {
+  brand: "Tesla",
+  model: "Model 3",
+  year: 2022,
+  specs: {
+    range: "500km",
+    topSpeed: "225km/h"
+  }
+};
+
+// 1. Print brand
+// 2. Change year to 2024
+// 3. Add color = "Red"
+// 4. Print range
+// 5. Loop and print all keys & values
+console.log(car["brand"]);
+car.year=2024;
+console.log(car["year"]);
+car.color="red";
+console.log(car);
+console.log(car.specs.range);
+for(let key in car){
+    console.log(key, ":", car[key]);
+} 
+let result="";
+for (let k in car){
+    result +=`${k}:${car[k]} | `;
+    
+} console.log(result);
+
+
+
+        </script>
+    </body>
+</html>

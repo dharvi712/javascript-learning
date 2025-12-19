@@ -1,0 +1,45 @@
+An object stores related data together using key : value pairs.
+👉 Think of an object as a real-life entity.
+Real-life example 👇
+A student has:
+name
+age
+branch
+CGPA
+All belong to one student, so we keep them inside one object.
+2.🔹 Accessing Object Values
+1️⃣ Dot notation (most common)
+2️⃣ Bracket notation (important)
+📌 Use brackets when:
+key has space
+key is stored in a variable
+📌 this refers to current object.
+3.There is no console.log without new line like C/C++ printf.
+Every console.log() → new line.
+So we combine values into one string, then print once.
+4.🔹 What is an Array of Objects?
+It’s exactly what it sounds like:
+👉 multiple objects stored inside an array
+5.👉 Use for loop when:
+You need index
+You need to modify array positions
+You need reverse or skip logic
+👉 Use for...of when:
+You just want to read values
+Working with arrays of objects
+Writing clean, modern JS
+6.🔍 What does map() do?
+👉 Transforms each element
+👉 Returns a new array
+👉 Length of new array = length of original array
+7.🧠 When to use map()?
+✔️ Extract properties
+✔️ Modify values
+✔️ Create new arrays
+❌ Not for filtering
+8.✅ WAY 1: Implicit return (NO return keyword)
+When you use ({ }), JavaScript automatically returns the object.
+✅ WAY 2: Explicit return (WITH return keyword)
+If you want to use return, you must use curly braces {}, not ({}).
+👉 Because {} is confused with a function body.
+👉 ({}) tells JS: this is an object, not a block.

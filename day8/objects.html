@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <script>
+            let student={
+                name:"Dharvi",age:19,branch:"CSE",cgpa:9.0
+            };
+            console.log(student.name);
+            console.log(student.cgpa);
+            console.log(student["age"]); 
+            student.age=20;
+            student.cgpa=9.2;
+            console.log(student["age"]); 
+            console.log(student.cgpa);
+            console.log(student);
+//adding new properties
+            student.college="VIT";
+            student.isHosteller = true;
+
+  // deleting properties
+             delete student.isHosteller;
+   
+   </script>
+    </body>
+</html>
