@@ -1,0 +1,8 @@
+1.async / await is just a cleaner way to write Promise-based code.
+2.✅ Rule 1: async always returns a Promise
+3.Code written after await behaves exactly like code written inside .then().
+4.🧠 Why?
+Sync → start, end
+Microtasks → promise1, promise2,await
+Macrotask → timeout order:sync>micro>Macrotask
+
