@@ -1,0 +1,26 @@
+<html>
+  <body>
+
+    <h2>Students with CGPA ≥ 9</h2>
+    <ul id="result"></ul>
+
+    <script>
+      let students = [
+        { name: "dharvi", cgpa: 9.3 },
+        { name: "ananya", cgpa: 9.0 },
+        { name: "vaibhavi", cgpa: 8.9 }
+      ];
+
+      let result = document.getElementById("result");
+
+      let toppers = students.filter(s => s.cgpa >= 9);
+
+      toppers.map(s => {
+        let li = document.createElement("li");
+        li.innerText = s.name + " - " + s.cgpa;
+        result.appendChild(li);
+      });
+    </script>
+
+  </body>
+</html>
