@@ -1,0 +1,14 @@
+1.🔹 What is filter()?
+filter() is used to pick (filter out) elements from an array based on a condition.
+2.🔹 Syntax (Basic)
+array.filter(function(element) {
+  return condition;
+});
+OR
+array.filter(element => condition);
+3.🔹 filter() DOES NOT:
+❌ Change original array
+❌ Change values
+❌ Increase array size
+It only selects.
+
