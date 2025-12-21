@@ -1,0 +1,39 @@
+1️⃣ What is DOM? (Very important)
+👉 DOM = a bridge between HTML and JavaScript
+HTML → structure
+CSS → design
+JavaScript → behavior
+📌 DOM allows JavaScript to:
+read HTML
+change HTML
+change CSS
+react to user actions (click, input, etc.)
+💡 Without DOM, JS cannot touch HTML.
+2.Selecting Elements (MOST IMPORTANT PART)
+🔹 By ID (most common)
+🔹 By Class
+🔹 By Tag
+🔹 Modern Way (BEST) ⭐
+3.Selection by ID (MOST USED)
+  🧠 What happens internally?
+Browser searches DOM tree
+Finds element with unique id
+Returns ONE element
+📌 Important rules
+id must be unique
+Returns single element, not array
+Fastest method
+4.Selection by Class Name
+  🧠 What is returned?
+👉 HTMLCollection
+5. Selection by Tag Name
+  Returns HTMLCollection
+✔️ Use when:
+You want ALL elements of same tag
+6.querySelector()
+   👉 Uses CSS selectors
+   🧠 Returns
+ONLY the first matching element
+7.7️⃣ querySelectorAll() — Multiple elements ⭐⭐
+  🧠 What is returned?
+👉 NodeList

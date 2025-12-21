@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <p class="box">one</p>
+        <p class="box">two</p>
+        <p class="box">three</p>
+        <button onclick="changeColor()">Change</button>
+        <script>
+            function changeColor(){
+                let boxes=document.getElementsByClassName("box");
+                for(let i=0;i<boxes.length;i++){
+                    boxes[i].style.color="red";
+                }
+            }
+        </script>
+    </body>
+</html>
