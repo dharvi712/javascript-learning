@@ -53,3 +53,4 @@ HTML:
 <input type="password">
 JS:
 document.querySelector('inner[type="password"]');
+
