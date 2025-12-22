@@ -1,0 +1,67 @@
+DOM TRAVERSAL (MOVING IN DOM)
+⬆️ Parent
+element.parentElement
+⬇️ Children
+1.element.children
+2.element.firtstChild
+3.element.lastChild
+✔️ Returns HTMLCollection
+✔️ ONLY element nodes
+✔️ Live collection (auto-updates)
+
+↔️ Siblings
+element.nextElementSibling
+element.previousElementSibling
+DOM TRAVERSAL VISUAL MAP (IMPORTANT)
+parentElement
+      ↑
+previous ← ELEMENT → next
+      ↓
+children
+4.LIVE vs STATIC COLLECTIONS (ADVANCED)
+children → LIVE
+div.children.length
+If you add a child later, length updates automatically.
+5.querySelectorAll → STATIC
+document.querySelectorAll("p")
+Does NOT auto update.
+📌 Interview favorite question.
+
+6.KEY DIFFERENCES (INTERVIEW TABLE)
+Feature	childNodes	children
+Includes text	✅	❌
+Type	NodeList	HTMLCollection
+Safe	❌	✅
+Industry use	❌	✅
+📌 Always use children unless you explicitly need text nodes
+7.🧠 What is an Event?
+Clicking a button is NOT isolated.
+Events travel through DOM.
+8.🔁 Event Flow (VERY IMPORTANT)
+There are 3 phases:
+1️⃣ Capturing (top → down)
+2️⃣ Target (actual element)
+3️⃣ Bubbling (down → top)
+9.EVENT DELEGATION 
+What is e?
+e = event object
+It contains:
+what happened
+where it happened
+which element caused it
+Most important property 👇
+👉 e.target = the ACTUAL element that was clicked
+#if (e.target.tagName === "LI") {
+What is tagName?
+It tells which HTML tag
+ALWAYS in UPPERCASE
+eg:
+list.onclick = (e) => {
+  if (e.target.tagName === "LI") {
+    e.target.remove();
+  }
+};
+
+
+
+

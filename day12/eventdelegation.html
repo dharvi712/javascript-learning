@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <ul id="list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+          
+        <script>
+let list = document.querySelector("#list");
+
+list.addEventListener("click", (e) => {
+  if (e.target.tagName === "LI") {
+    e.target.remove();
+  }
+});
+
+        </script>
+    </body>
+</html>

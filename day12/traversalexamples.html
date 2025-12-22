@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Traversal Demo</title>
+  <style>
+    body {
+      font-family: Arial;
+    }
+    div {
+      border: 2px solid black;
+      padding: 10px;
+      width: 300px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>DOM Traversal Example</h2>
+
+  <div id="container">
+    <h1>Title</h1>
+    <p>Para</p>
+    <span>Span</span>
+  </div>
+
+  <button id="btn">Test Traversal</button>
+
+  <script>
+    let div = document.querySelector("#container");
+    let btn = document.querySelector("#btn");
+
+    btn.addEventListener("click", () => {
+
+      // 1️⃣ CHILDREN
+      console.log("Children:", div.children);
+      console.log("Children count:", div.children.length);
+
+      // 2️⃣ FIRST & LAST CHILD
+      let first = div.firstElementChild;
+      let last = div.lastElementChild;
+
+      console.log("First child:", first);
+      console.log("Last child:", last);
+
+      // Styling to show effect
+      first.style.color = "red";
+      last.style.color = "blue";
+
+      // 3️⃣ NEXT & PREVIOUS SIBLING
+      console.log("First previous sibling:", first.previousElementSibling); // null
+      console.log("Last next sibling:", last.nextElementSibling);           // null
+
+      // 4️⃣ SAFE SIBLING ACCESS
+      let middle = div.children[1]; // <p>Para</p>
+      console.log("Middle element:", middle);
+
+      if (middle.previousElementSibling) {
+        middle.previousElementSibling.style.background = "yellow";
+      }
+
+      if (middle.nextElementSibling) {
+        middle.nextElementSibling.style.background = "lightgreen";
+      }
+
+    });
+  </script>
+
+</body>
+</html>

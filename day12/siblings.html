@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <ul>
+            <li>one</li>
+            <li id="two">Two</li>
+            <li>Three</li>
+            </ul>
+        <script>
+            let li=document.querySelector("#two");
+            console.log(li.previousElementSibling);
+            console.log(li.nextElementSibling);
+// edge case
+firstElement.previousElementSibling // null
+lastElement.nextElementSibling      // null
+
+        </script>
+    </body>
+</html>
