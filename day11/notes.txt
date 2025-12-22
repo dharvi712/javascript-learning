@@ -1,0 +1,55 @@
+queryselector()
+document.querySelector(selector)
+👉 It selects the FIRST HTML element that matches a CSS selector
+2.2️⃣ Why querySelector is Powerful 💪
+✔️ Uses CSS selectors
+✔️ One method for id, class, tag, attribute
+✔️ Cleaner & modern
+✔️ Preferred in real projects
+3️⃣ Basic Syntax
+let element = document.querySelector("selector");
+4. Selecting by tag
+eg:-
+HTMl:
+<p>One</p>
+<p>Two</p>
+JS:
+let p=document.querySelector("p");
+console.log(p);
+output:<p>One</p>
+5️⃣ Selecting by ID (#)
+HTML:
+<h id="title">Hello</h1>
+JS:
+let h=document.querySelector("#title");
+6️⃣ Selecting by CLASS (.)
+HTML:
+<p class="text">A</p>
+<p class="text">B</p>
+JS:
+let para=document>querySelector(".text");
+🧠 Dry run:
+Finds first element with class text
+Ignores rest
+✔️ Output → <p class="text">A</p>
+7️⃣ Selecting Nested Elements
+HTML:
+<div>
+<p class="msg">Hello</p>
+</div>
+JS:
+let p=document.querySelector("div .msg");
+📌 Space means inside
+✔️ Selects .msg inside div
+8️⃣ Selecting Multiple Classes
+HTML:
+<p class="box active">Hi</p>
+JS:document.querySelector(" .box.active");
+📌 NO SPACE → same element has both classes
+❌ .box .active → different elements
+9️⃣ Attribute Selectors 
+HTML:
+<input type="text">
+<input type="password">
+JS:
+document.querySelector('inner[type="password"]');
